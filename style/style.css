@@ -1,0 +1,59 @@
+/*----------------------------------------------
+  Google font link
+-----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+
+/*----------------------------------------------
+  Css variable
+-----------------------------------------------*/
+:root{
+    --black: #131313;
+    --white: #FFFFFF;
+    --btn-bg: #ff900e;
+    --section-bg: rgba(255, 144, 14, 0.1);
+}
+
+/*----------------------------------------------
+  Common css
+-----------------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 96%;
+  margin: 0 auto;
+}
+h3 {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+.btn-primary {
+  width: 180px;
+  height: 64px;
+  background: #ff900e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: none;
+}
+p{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style-type: none;
+}
