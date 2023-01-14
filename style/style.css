@@ -166,6 +166,38 @@ nav .menu ul{
 .text_content p{
     margin: 24px 0px 32px;
 }
+
+/*----------------------------------------------
+  Some Facts section css
+-----------------------------------------------*/
+.some_facts{
+    padding: 50px 0;
+}
+.facts_header p{
+    margin: 24px 0 60px;
+}
+.facts_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.facts_items .item{
+    text-align: center;
+    border: 1px solid var(--btn-bg);
+    padding: 45px;
+    border-radius: 8px;
+}
+.facts_items .item h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: var(--link-color);
+}
+.facts_items .item h5{
+    color: var(--span_color);
+    font-size: 20px;
+    font-weight: 600;
+}
 /*----------------------------------------------
   Common css
 -----------------------------------------------*/
@@ -214,5 +246,14 @@ nav .menu ul{
     }
     .text_content {
         margin-top: 30px;
+    }
+    /* Some Facts section responsive  */
+    .facts_items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .facts_items .item {
+        padding: 35px;
     }
 }
