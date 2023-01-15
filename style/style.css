@@ -285,10 +285,17 @@ nav .menu ul{
     filter: grayscale(1);
 }
 /*----------------------------------------------
-  Common css
+  Footer section css
 -----------------------------------------------*/
-
-
+.footer .container{
+    padding: 40px;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+.footer p {
+    text-align: center;
+    color: var(--link-color);
+}
 
 
 
