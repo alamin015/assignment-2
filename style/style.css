@@ -119,7 +119,8 @@ nav .menu ul{
 /*------------------------Banner content--------------------------*/
 .banner_content{
     padding-top: 116px;
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -421,11 +422,86 @@ nav .menu ul{
     color: var(--link-color);
 }
 
-
+.br {
+    display: none;
+}
 
 /*----------------------------------------------
   Responsive css
 -----------------------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+    .our_feature_content {
+        gap: 30px;
+    }
+    .our_feature_content .image_content {
+        width: 60%;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+    .our_feature_content .image_content img{
+        width: 100%;
+    }
+    .our_feature_content .text_content {
+        width: 40%;
+    }
+}
+@media only screen and (max-width:991px) {
+    .br {
+        display: block;
+    }
+    .our_feature_content {
+        display: block;
+    }
+    .image_content {
+        margin-bottom: 20px;
+    }
+    .our_feature_content .image_content {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        grid-gap: 15px;
+
+    }
+    .our_feature_content .image_content img{
+        width: 100%;
+    }
+    .our_feature_content .text_content {
+        width: 100%;
+    }
+    .love_enjoy_content {
+        display: block;
+    }
+    .love_enjoy_content .content_text {
+        width: 100%;
+    }
+    .love_enjoy_content .love_enjoy_img {
+        text-align: center;
+        margin: 15px auto;
+    }
+    .love_enjoy_content .love_enjoy_img img {
+        max-width: 500px;
+        width: 100%;
+        height: 600px;
+    }
+    .services .services_header {
+        text-align: left;
+    }
+    .sponsor .sponsor_items {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 576px) {
     h2{
         font-size: 35px;
@@ -490,6 +566,9 @@ nav .menu ul{
     .services_header {
         text-align: left;
     }
+    .enjoy_btn_bottom .experience_btn {
+        margin-top: -30px;
+    }
     /* Sponsor section responsive  */
     .sponsor .sponsor_items {
         display: grid;
@@ -501,3 +580,4 @@ nav .menu ul{
         width: 150px;
     }
 }
+
