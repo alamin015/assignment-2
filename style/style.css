@@ -40,12 +40,17 @@ h3 {
 .btn_primary {
   width: 180px;
   height: 64px;
-  background: #ff900e;
+  background: var(--btn-bg);
   border-radius: 8px;
   font-weight: 600;
   font-size: 20px;
   color: #FFFFFF;
   border: none;
+  transition: all 0.2s ease-in-out;
+}
+.btn_primary:hover {
+    cursor: pointer;
+    border-radius: 40px 0 40px 0;
 }
 p{
     color: #727272;
@@ -249,12 +254,20 @@ nav .menu ul{
     border: 1px solid var(--btn-bg);
     padding: 45px;
     border-radius: 8px;
+    transition: all 0.1s ease-in-out;
+}
+.facts_items .item:hover {
+    background: var(--section-bg);
 }
 .facts_items .item h4{
     font-size: 30px;
     font-weight: 600;
     margin: 10px 0 5px;
     color: var(--link-color);
+    transition: all 0.1s ease-in-out;
+}
+.facts_items .item:hover h4{
+    color: var(--btn-bg);
 }
 .facts_items .item h5{
     color: var(--span_color);
@@ -283,13 +296,18 @@ nav .menu ul{
 .sponsor_items img{
     height: 50px;
     filter: grayscale(1);
+    transition: all 0.2s;
+}
+.sponsor_items img:hover {
+    cursor: pointer;
+    filter: grayscale(0);
 }
 /*----------------------------------------------
   Footer section css
 -----------------------------------------------*/
 .footer .container{
     padding: 40px;
-    background: #FFF4E7;
+    background: var(--section-bg);
     border-radius: 8px;
 }
 .footer p {
