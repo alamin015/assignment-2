@@ -276,6 +276,102 @@ nav .menu ul{
 }
 
 /*----------------------------------------------
+  services section css
+-----------------------------------------------*/
+.services{
+    padding: 50px 0;
+}
+.services_header {
+    text-align: center;
+}
+.services_header p {
+    margin: 24px 0 50px;
+}
+
+.services_items_contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+
+.service_item{
+    border-radius: 8px;
+}
+.service_item .design_img{ 
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+}
+.design_img img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+.service_item:hover .design_img img{ 
+    transform: scale(1.2);
+}
+
+.service_item .design_text {
+    position: relative;
+    padding: 40px 20px;
+    margin-top: -4px;
+    overflow: hidden;
+}
+.service_item .design_text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgb(238, 179, 179);
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0 0 8px 8px;
+}
+.service_item:hover .design_text::before{
+    height: 100%;
+}
+.service_item .design_text h3{
+    position: relative;
+    top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--black);
+    transition: all 0.5s ease-in-out;
+}
+.service_item:hover .design_text h3 {
+    top: -20px;
+}
+.service_item .design_text .hr_line {
+    position: relative;
+    top: 0px;
+    width: 100px;
+    height: 3px;
+    background: var(--btn-bg);
+    transition: all 0.5s ease-in-out;
+}
+.service_item:hover .design_text .hr_line {
+    top: -20px;
+}
+.service_item .design_text a{
+    position: relative;
+    top: -20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--link-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.service_item:hover .design_text a {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+/*----------------------------------------------
   Sponsor section css
 -----------------------------------------------*/
 .sponsor{
