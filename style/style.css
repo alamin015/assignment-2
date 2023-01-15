@@ -166,38 +166,6 @@ nav .menu ul{
 .text_content p{
     margin: 24px 0px 32px;
 }
-
-/*----------------------------------------------
-  Some Facts section css
------------------------------------------------*/
-.some_facts{
-    padding: 50px 0;
-}
-.facts_header p{
-    margin: 24px 0 60px;
-}
-.facts_items{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 30px;
-}
-.facts_items .item{
-    text-align: center;
-    border: 1px solid var(--btn-bg);
-    padding: 45px;
-    border-radius: 8px;
-}
-.facts_items .item h4{
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 0 5px;
-    color: var(--link-color);
-}
-.facts_items .item h5{
-    color: var(--span_color);
-    font-size: 20px;
-    font-weight: 600;
-}
 /*----------------------------------------------
   Love & Enjoy section css
 -----------------------------------------------*/
@@ -263,6 +231,60 @@ nav .menu ul{
     font-weight: 600;
 }
 /*----------------------------------------------
+  Some Facts section css
+-----------------------------------------------*/
+.some_facts{
+    padding: 50px 0;
+}
+.facts_header p{
+    margin: 24px 0 60px;
+}
+.facts_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+.facts_items .item{
+    text-align: center;
+    border: 1px solid var(--btn-bg);
+    padding: 45px;
+    border-radius: 8px;
+}
+.facts_items .item h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: var(--link-color);
+}
+.facts_items .item h5{
+    color: var(--span_color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*----------------------------------------------
+  Sponsor section css
+-----------------------------------------------*/
+.sponsor{
+    padding: 50px 0;
+}
+.sponsor_header{
+    text-align: center;
+}
+.sponsor_header p{
+    margin: 24px 0 50px;
+}
+.sponsor .sponsor_items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.sponsor_items img{
+    height: 50px;
+    filter: grayscale(1);
+}
+/*----------------------------------------------
   Common css
 -----------------------------------------------*/
 
@@ -311,15 +333,6 @@ nav .menu ul{
     .text_content {
         margin-top: 30px;
     }
-    /* Some Facts section responsive  */
-    .facts_items {
-        grid-template-columns: repeat(2,1fr);
-        gap: 15px;
-    }
-    .facts_items .item {
-        padding: 35px;
-    }
-
     /* Love & Enjoy section responsive  */
     .love_enjoy_content{
         flex-direction: column-reverse;
@@ -333,5 +346,23 @@ nav .menu ul{
     }
     .enjoy_btn_bottom {
         margin-top: 15px;
+    }
+    /* Some Facts section responsive  */
+    .facts_items {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .facts_items .item {
+        padding: 35px;
+    }
+    /* Sponsor section responsive  */
+    .sponsor .sponsor_items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 35px 15px;
+    }
+    .sponsor_items img{
+        height: 50px;
+        width: 150px;
     }
 }
