@@ -296,13 +296,21 @@ nav .menu ul{
 
 .service_item{
     border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+
 }
+
 .service_item .design_img{ 
     overflow: hidden;
     margin-bottom: 0;
     padding: 0;
     border-radius: 8px 8px 0 0;
+    width: 100%;
+    position: relative;
 }
+
 .design_img img {
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -325,7 +333,7 @@ nav .menu ul{
     height: 0;
     left: 0;
     top: 0;
-    background: rgb(238, 179, 179);
+    background: var(--black);
     z-index: -1;
     transition: all 0.5s ease-in-out;
     border-radius: 0 0 8px 8px;
@@ -344,6 +352,7 @@ nav .menu ul{
 }
 .service_item:hover .design_text h3 {
     top: -20px;
+    color: var(--white);
 }
 .service_item .design_text .hr_line {
     position: relative;
@@ -370,6 +379,7 @@ nav .menu ul{
     top: 0;
     visibility: visible;
     opacity: 1;
+    color: var(--btn-bg);
 }
 /*----------------------------------------------
   Sponsor section css
@@ -475,6 +485,10 @@ nav .menu ul{
     }
     .facts_items .item {
         padding: 35px;
+    }
+    /* services section responsive  */
+    .services_header {
+        text-align: left;
     }
     /* Sponsor section responsive  */
     .sponsor .sponsor_items {
